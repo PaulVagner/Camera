@@ -9,10 +9,23 @@
 /* Begin PBXBuildFile section */
 		440BC4281BD5269F00EB7981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4271BD5269F00EB7981 /* main.m */; };
 		440BC42B1BD5269F00EB7981 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC42A1BD5269F00EB7981 /* AppDelegate.m */; };
-		440BC42E1BD5269F00EB7981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC42D1BD5269F00EB7981 /* ViewController.m */; };
 		440BC4311BD5269F00EB7981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440BC42F1BD5269F00EB7981 /* Main.storyboard */; };
 		440BC4331BD5269F00EB7981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440BC4321BD5269F00EB7981 /* Assets.xcassets */; };
 		440BC4361BD5269F00EB7981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440BC4341BD5269F00EB7981 /* LaunchScreen.storyboard */; };
+		440BC43E1BD56C1B00EB7981 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440BC43D1BD56C1B00EB7981 /* Create.storyboard */; settings = {ASSET_TAGS = (); }; };
+		440BC4401BD56C2D00EB7981 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440BC43F1BD56C2D00EB7981 /* User.storyboard */; settings = {ASSET_TAGS = (); }; };
+		440BC4461BD56EAE00EB7981 /* SelfieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4451BD56EAE00EB7981 /* SelfieTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4491BD56EF700EB7981 /* SelfieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4481BD56EF700EB7981 /* SelfieDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC44C1BD5704F00EB7981 /* SelfieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC44B1BD5704F00EB7981 /* SelfieTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		440BC44F1BD5780C00EB7981 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC44E1BD5780C00EB7981 /* CaptureViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4521BD5782800EB7981 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4511BD5782800EB7981 /* FilterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4551BD5783B00EB7981 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4541BD5783B00EB7981 /* SubmitViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4581BD5788200EB7981 /* FilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4571BD5788200EB7981 /* FilterDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		440BC45D1BD579B500EB7981 /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC45C1BD579B500EB7981 /* FilterCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4601BD580AC00EB7981 /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC45F1BD580AC00EB7981 /* ChoiceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4631BD580C200EB7981 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4621BD580C200EB7981 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4661BD5810D00EB7981 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4651BD5810D00EB7981 /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		440BC4691BD5816200EB7981 /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440BC4681BD5816200EB7981 /* AvatarViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +33,36 @@
 		440BC4271BD5269F00EB7981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		440BC4291BD5269F00EB7981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		440BC42A1BD5269F00EB7981 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		440BC42C1BD5269F00EB7981 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		440BC42D1BD5269F00EB7981 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		440BC4301BD5269F00EB7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		440BC4321BD5269F00EB7981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		440BC4351BD5269F00EB7981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		440BC4371BD5269F00EB7981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440BC43D1BD56C1B00EB7981 /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		440BC43F1BD56C2D00EB7981 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		440BC4441BD56EAE00EB7981 /* SelfieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewController.h; sourceTree = "<group>"; };
+		440BC4451BD56EAE00EB7981 /* SelfieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewController.m; sourceTree = "<group>"; };
+		440BC4471BD56EF700EB7981 /* SelfieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieDetailViewController.h; sourceTree = "<group>"; };
+		440BC4481BD56EF700EB7981 /* SelfieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieDetailViewController.m; sourceTree = "<group>"; };
+		440BC44A1BD5704F00EB7981 /* SelfieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewCell.h; sourceTree = "<group>"; };
+		440BC44B1BD5704F00EB7981 /* SelfieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewCell.m; sourceTree = "<group>"; };
+		440BC44D1BD5780C00EB7981 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		440BC44E1BD5780C00EB7981 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		440BC4501BD5782800EB7981 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		440BC4511BD5782800EB7981 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		440BC4531BD5783B00EB7981 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		440BC4541BD5783B00EB7981 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		440BC4561BD5788200EB7981 /* FilterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterDataSource.h; sourceTree = "<group>"; };
+		440BC4571BD5788200EB7981 /* FilterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterDataSource.m; sourceTree = "<group>"; };
+		440BC45B1BD579B500EB7981 /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
+		440BC45C1BD579B500EB7981 /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
+		440BC45E1BD580AC00EB7981 /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		440BC45F1BD580AC00EB7981 /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
+		440BC4611BD580C200EB7981 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		440BC4621BD580C200EB7981 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		440BC4641BD5810D00EB7981 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		440BC4651BD5810D00EB7981 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		440BC4671BD5816200EB7981 /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
+		440BC4681BD5816200EB7981 /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +96,11 @@
 			isa = PBXGroup;
 			children = (
 				440BC42F1BD5269F00EB7981 /* Main.storyboard */,
-				440BC4291BD5269F00EB7981 /* AppDelegate.h */,
-				440BC42A1BD5269F00EB7981 /* AppDelegate.m */,
-				440BC42C1BD5269F00EB7981 /* ViewController.h */,
-				440BC42D1BD5269F00EB7981 /* ViewController.m */,
+				440BC4431BD56CC900EB7981 /* Main Flow */,
+				440BC43D1BD56C1B00EB7981 /* Create.storyboard */,
+				440BC4421BD56CB600EB7981 /* Create Flow */,
+				440BC43F1BD56C2D00EB7981 /* User.storyboard */,
+				440BC4411BD56CA900EB7981 /* User Flow */,
 				440BC4261BD5269F00EB7981 /* Supporting Files */,
 			);
 			path = Camera;
@@ -71,12 +109,75 @@
 		440BC4261BD5269F00EB7981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				440BC4291BD5269F00EB7981 /* AppDelegate.h */,
+				440BC42A1BD5269F00EB7981 /* AppDelegate.m */,
 				440BC4321BD5269F00EB7981 /* Assets.xcassets */,
 				440BC4341BD5269F00EB7981 /* LaunchScreen.storyboard */,
 				440BC4371BD5269F00EB7981 /* Info.plist */,
 				440BC4271BD5269F00EB7981 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		440BC4411BD56CA900EB7981 /* User Flow */ = {
+			isa = PBXGroup;
+			children = (
+				440BC45E1BD580AC00EB7981 /* ChoiceViewController.h */,
+				440BC45F1BD580AC00EB7981 /* ChoiceViewController.m */,
+				440BC4611BD580C200EB7981 /* LoginViewController.h */,
+				440BC4621BD580C200EB7981 /* LoginViewController.m */,
+				440BC4641BD5810D00EB7981 /* RegisterViewController.h */,
+				440BC4651BD5810D00EB7981 /* RegisterViewController.m */,
+				440BC4671BD5816200EB7981 /* AvatarViewController.h */,
+				440BC4681BD5816200EB7981 /* AvatarViewController.m */,
+			);
+			name = "User Flow";
+			sourceTree = "<group>";
+		};
+		440BC4421BD56CB600EB7981 /* Create Flow */ = {
+			isa = PBXGroup;
+			children = (
+				440BC44D1BD5780C00EB7981 /* CaptureViewController.h */,
+				440BC44E1BD5780C00EB7981 /* CaptureViewController.m */,
+				440BC4501BD5782800EB7981 /* FilterViewController.h */,
+				440BC4511BD5782800EB7981 /* FilterViewController.m */,
+				440BC45A1BD578FD00EB7981 /* FilterView */,
+				440BC4531BD5783B00EB7981 /* SubmitViewController.h */,
+				440BC4541BD5783B00EB7981 /* SubmitViewController.m */,
+			);
+			name = "Create Flow";
+			sourceTree = "<group>";
+		};
+		440BC4431BD56CC900EB7981 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				440BC4441BD56EAE00EB7981 /* SelfieTableViewController.h */,
+				440BC4451BD56EAE00EB7981 /* SelfieTableViewController.m */,
+				440BC4591BD578AB00EB7981 /* SelfieTableView */,
+				440BC4471BD56EF700EB7981 /* SelfieDetailViewController.h */,
+				440BC4481BD56EF700EB7981 /* SelfieDetailViewController.m */,
+			);
+			name = "Main Flow";
+			sourceTree = "<group>";
+		};
+		440BC4591BD578AB00EB7981 /* SelfieTableView */ = {
+			isa = PBXGroup;
+			children = (
+				440BC44A1BD5704F00EB7981 /* SelfieTableViewCell.h */,
+				440BC44B1BD5704F00EB7981 /* SelfieTableViewCell.m */,
+			);
+			name = SelfieTableView;
+			sourceTree = "<group>";
+		};
+		440BC45A1BD578FD00EB7981 /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				440BC4561BD5788200EB7981 /* FilterDataSource.h */,
+				440BC4571BD5788200EB7981 /* FilterDataSource.m */,
+				440BC45B1BD579B500EB7981 /* FilterCollectionViewCell.h */,
+				440BC45C1BD579B500EB7981 /* FilterCollectionViewCell.m */,
+			);
+			name = FilterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440BC43E1BD56C1B00EB7981 /* Create.storyboard in Resources */,
+				440BC4401BD56C2D00EB7981 /* User.storyboard in Resources */,
 				440BC4361BD5269F00EB7981 /* LaunchScreen.storyboard in Resources */,
 				440BC4331BD5269F00EB7981 /* Assets.xcassets in Resources */,
 				440BC4311BD5269F00EB7981 /* Main.storyboard in Resources */,
@@ -150,9 +253,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				440BC42E1BD5269F00EB7981 /* ViewController.m in Sources */,
+				440BC4581BD5788200EB7981 /* FilterDataSource.m in Sources */,
+				440BC4461BD56EAE00EB7981 /* SelfieTableViewController.m in Sources */,
+				440BC4491BD56EF700EB7981 /* SelfieDetailViewController.m in Sources */,
+				440BC44C1BD5704F00EB7981 /* SelfieTableViewCell.m in Sources */,
 				440BC42B1BD5269F00EB7981 /* AppDelegate.m in Sources */,
+				440BC4551BD5783B00EB7981 /* SubmitViewController.m in Sources */,
+				440BC45D1BD579B500EB7981 /* FilterCollectionViewCell.m in Sources */,
+				440BC4521BD5782800EB7981 /* FilterViewController.m in Sources */,
+				440BC4631BD580C200EB7981 /* LoginViewController.m in Sources */,
+				440BC4661BD5810D00EB7981 /* RegisterViewController.m in Sources */,
 				440BC4281BD5269F00EB7981 /* main.m in Sources */,
+				440BC44F1BD5780C00EB7981 /* CaptureViewController.m in Sources */,
+				440BC4601BD580AC00EB7981 /* ChoiceViewController.m in Sources */,
+				440BC4691BD5816200EB7981 /* AvatarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

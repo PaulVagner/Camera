@@ -9,6 +9,8 @@
 #import "CaptureViewController.h"
 
 @interface CaptureViewController ()
+- (IBAction)takePictureButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *selfiePictureView;
 
 @end
 
@@ -34,4 +36,6 @@
 }
 */
 
+- (IBAction)takePictureButton:(id)sender {
+}
 @end

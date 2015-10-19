@@ -108,6 +108,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="F90-Us-awF" id="9Qm-AX-I9k"/>
+                        <outlet property="passwordField" destination="F2d-ML-xY2" id="7sg-dg-imO"/>
+                        <outlet property="usernameField" destination="k3y-80-AoC" id="0Wp-NH-DDD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfE-Sy-8CF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

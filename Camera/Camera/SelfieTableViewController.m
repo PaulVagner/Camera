@@ -7,6 +7,8 @@
 //
 
 #import "SelfieTableViewController.h"
+#import <Parse/Parse.h>
+
 
 @interface SelfieTableViewController ()
 
@@ -17,6 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    if ([PFUser currentUser] != nil) {
+        
+    } else {
+        
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Create" bundle:nil];
+    
+        UINavigationController * nc = [storyboard instantiateInitialViewController];
+        
+        [self presentViewController:nc animated:YES completion:nil];
+        
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

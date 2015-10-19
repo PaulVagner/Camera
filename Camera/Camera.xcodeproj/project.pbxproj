@@ -77,8 +77,8 @@
 		440BC4681BD5816200EB7981 /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
 		440BC46E1BD58B2000EB7981 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		440BC4701BD58B3400EB7981 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		440BC4721BD58C2A00EB7981 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Bolts.framework; sourceTree = "<group>"; };
-		440BC4731BD58C2A00EB7981 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
+		440BC4721BD58C2A00EB7981 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		440BC4731BD58C2A00EB7981 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		440BC4761BD5926A00EB7981 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		440BC4781BD5927C00EB7981 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		440BC47A1BD5928500EB7981 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,6 +137,7 @@
 				440BC4421BD56CB600EB7981 /* Create Flow */,
 				440BC43F1BD56C2D00EB7981 /* User.storyboard */,
 				440BC4411BD56CA900EB7981 /* User Flow */,
+				440BC4861BD594AE00EB7981 /* Frameworks */,
 				440BC4261BD5269F00EB7981 /* Supporting Files */,
 			);
 			path = Camera;
@@ -145,18 +146,6 @@
 		440BC4261BD5269F00EB7981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				440BC4841BD592A900EB7981 /* SystemConfiguration.framework */,
-				440BC4821BD5929F00EB7981 /* StoreKit.framework */,
-				440BC4801BD5929800EB7981 /* Security.framework */,
-				440BC47E1BD5929100EB7981 /* QuartzCore.framework */,
-				440BC47C1BD5928B00EB7981 /* CoreLocation.framework */,
-				440BC47A1BD5928500EB7981 /* CoreGraphics.framework */,
-				440BC4781BD5927C00EB7981 /* CFNetwork.framework */,
-				440BC4761BD5926A00EB7981 /* AudioToolbox.framework */,
-				440BC4721BD58C2A00EB7981 /* Bolts.framework */,
-				440BC4731BD58C2A00EB7981 /* Parse.framework */,
-				440BC4701BD58B3400EB7981 /* libsqlite3.tbd */,
-				440BC46E1BD58B2000EB7981 /* libz.tbd */,
 				440BC4291BD5269F00EB7981 /* AppDelegate.h */,
 				440BC42A1BD5269F00EB7981 /* AppDelegate.m */,
 				440BC4321BD5269F00EB7981 /* Assets.xcassets */,
@@ -226,6 +215,26 @@
 				440BC45C1BD579B500EB7981 /* FilterCollectionViewCell.m */,
 			);
 			name = FilterView;
+			sourceTree = "<group>";
+		};
+		440BC4861BD594AE00EB7981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				440BC4841BD592A900EB7981 /* SystemConfiguration.framework */,
+				440BC4821BD5929F00EB7981 /* StoreKit.framework */,
+				440BC4801BD5929800EB7981 /* Security.framework */,
+				440BC47E1BD5929100EB7981 /* QuartzCore.framework */,
+				440BC47C1BD5928B00EB7981 /* CoreLocation.framework */,
+				440BC47A1BD5928500EB7981 /* CoreGraphics.framework */,
+				440BC4781BD5927C00EB7981 /* CFNetwork.framework */,
+				440BC4761BD5926A00EB7981 /* AudioToolbox.framework */,
+				440BC4721BD58C2A00EB7981 /* Bolts.framework */,
+				440BC4731BD58C2A00EB7981 /* Parse.framework */,
+				440BC4701BD58B3400EB7981 /* libsqlite3.tbd */,
+				440BC46E1BD58B2000EB7981 /* libz.tbd */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,11 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"/Users/paulvagner/_Resources/Frameworks/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "/Users/paulvagner/_Resources/Frameworks/**";
 				INFOPLIST_FILE = Camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulvagner.Camera;
@@ -440,11 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"/Users/paulvagner/_Resources/Frameworks/**",
-				);
+				FRAMEWORK_SEARCH_PATHS = "/Users/paulvagner/_Resources/Frameworks/**";
 				INFOPLIST_FILE = Camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulvagner.Camera;
@@ -471,6 +472,7 @@
 				440BC43C1BD5269F00EB7981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

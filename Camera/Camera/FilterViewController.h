@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ImageEditing.h"
+
 @interface FilterViewController : UIViewController
 
 @property UIImage * originalImage;
 
-@property (weak, nonatomic) IBOutlet UIImageView * filterImageView;
+
 
 @end

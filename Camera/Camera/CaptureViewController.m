@@ -10,6 +10,8 @@
 
 #import "FilterViewController.h"
 
+#import "ImageEditing.h"
+
 @interface CaptureViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *cameraHolderView;
@@ -86,11 +88,12 @@
     
     //pass the image
     
-    NSLog(@"%@", filterVC.filterImageView);
-
-    filterVC.originalImage = image;
+#warning FIX THIS - Image is reversed horizontally.
     
     
+    filterVC.originalImage = flipImage(image);
+    
+//    filterVC.originalImage = image;
     
     [self.navigationController pushViewController:filterVC animated:YES];
     

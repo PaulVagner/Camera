@@ -87,6 +87,7 @@
 		440BC4911BD6761700EB7981 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		440BC4921BD6761700EB7981 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../_Resources/Frameworks/Parse/Bolts.framework; sourceTree = "<group>"; };
 		440BC4931BD6761700EB7981 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../_Resources/Frameworks/Parse/Parse.framework; sourceTree = "<group>"; };
+		441CEF491BD81055009F5295 /* ImageEditing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageEditing.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +133,7 @@
 		440BC4251BD5269F00EB7981 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				441CEF491BD81055009F5295 /* ImageEditing.h */,
 				440BC42F1BD5269F00EB7981 /* Main.storyboard */,
 				440BC4431BD56CC900EB7981 /* Main Flow */,
 				440BC43D1BD56C1B00EB7981 /* Create.storyboard */,
@@ -174,10 +176,10 @@
 		440BC4421BD56CB600EB7981 /* Create Flow */ = {
 			isa = PBXGroup;
 			children = (
-				440BC44E1BD5780C00EB7981 /* CaptureViewController.m */,
 				440BC44D1BD5780C00EB7981 /* CaptureViewController.h */,
-				440BC4511BD5782800EB7981 /* FilterViewController.m */,
+				440BC44E1BD5780C00EB7981 /* CaptureViewController.m */,
 				440BC4501BD5782800EB7981 /* FilterViewController.h */,
+				440BC4511BD5782800EB7981 /* FilterViewController.m */,
 				440BC45A1BD578FD00EB7981 /* FilterView */,
 				440BC4531BD5783B00EB7981 /* SubmitViewController.h */,
 				440BC4541BD5783B00EB7981 /* SubmitViewController.m */,

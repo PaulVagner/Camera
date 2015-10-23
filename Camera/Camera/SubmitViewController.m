@@ -14,49 +14,44 @@
 
 @property (weak, nonatomic) IBOutlet UITextView * captionTextView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *filteredImageView;
 
 @end
 
+
+
 @implementation SubmitViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    
+    self.filteredImageView.image = self.filteredImage;
+    
 }
 
 - (IBAction)submitSelfie:(id)sender {
 
     PFObject * selfie = [PFObject objectWithClassName:@"Selfie"];
 
+    
+    //turn UIImage into NSData (basically getting the raw data)
+    NSData * imageData = UIImagePNGRepresentation(self.filteredImage);
+    
+    
+    //create a Parse File with the raw data, so that it can store the image
+    PFFile * imageFile = [PFFile fileWithData:imageData];
+    
+    selfie[@"image"] = imageFile; //PFFile column
+    
     //let selfie = PFObject(className:"Selfie")
     
-    selfie[@"caption"] = self.captionTextView.text;
+    selfie[@"caption"] = self.captionTextView.text; //String column
 
     //selfie["caption"} = captionTextView.text
-
+    selfie[@"user"] = [PFUser currentUser]; // pointer -> _User column
     //[selfie save];
     [selfie saveInBackground];
     
-    
-    
 }
-
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

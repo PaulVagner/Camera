@@ -12,6 +12,7 @@
 
 #import "ImageEditing.h"
 
+#import "SubmitViewController.h"
 
 @interface FilterViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -107,6 +108,26 @@
 
     
 }
+
+- (IBAction)pressedNext:(id)sender {
+
+    SubmitViewController * submitVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SubmitVC"];
+    
+    //pass the image
+    
+    
+    
+    submitVC.filteredImage = self.filterImageView.image;
+    
+    //    filterVC.originalImage = image;
+    
+    [self.navigationController pushViewController:submitVC animated:YES];
+    
+    
+
+}
+
+
 
 @end
 

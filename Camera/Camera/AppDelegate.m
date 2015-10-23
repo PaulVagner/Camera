@@ -20,8 +20,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
     [Parse setApplicationId:@"W071vUhpAfvZ02x0lOdASEuGVmDIF8zAn1Xzrndk" clientKey:@"Om4qopIp2jNXvnDHR55HxoEug1Rtr060VoWWQG0Y"];
     
+    UINavigationController * nc;
+    
+    
+    if ([PFUser currentUser] != nil) {
+        
+        UIStoryboard * mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        nc = [mainStoryboard instantiateInitialViewController];
+        //we are logged in
+    
+    } else {
+        UIStoryboard * userStoryboard = [UIStoryboard storyboardWithName:@"User" bundle:nil];
+        nc = [userStoryboard instantiateInitialViewController];
+        //not logged in
+        
+    }
+    
+    self.window.rootViewController = nc;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

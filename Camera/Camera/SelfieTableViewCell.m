@@ -8,16 +8,55 @@
 
 #import "SelfieTableViewCell.h"
 
+@interface SelfieTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
+
+
+@end
+
+
 @implementation SelfieTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+
+- (void)setSelfie:(PFObject *)selfie {
+    
+    
+    NSLog(@"did move to window");
+    
+    _selfie = selfie;
+    [self updateInfo];
+    
+    
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+//- (void)prepareForReuse {
+//    
+//    [self updateInfo];
+//}
 
-    // Configure the view for the selected state
+
+#warning Set image based on selfie["image"]
+
+- (void)updateInfo {
+    
+    NSLog(@"%@", self.selfie);
+    
+    PFFile * userImageFile = self.selfie[@"image"];
+    [userImageFile getDataInBackgroundWithBlock:^(NSData * imageData, NSError *error) {
+        if (!error) {
+            self.selfieImageView.image = [UIImage imageWithData:imageData];
+        }
+    }];
+    
+    
+    
+    
+//    self.selfieImageView.image = self.selfie[@"image"];
+    
+    
 }
+
+
 
 @end

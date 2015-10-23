@@ -8,15 +8,32 @@
 
 #import "RegisterViewController.h"
 
+#import <Parse/Parse.h>
+
 @interface RegisterViewController ()
+
+- (IBAction)registerButtonPressed:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+
+
+
 
 @end
 
 @implementation RegisterViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +41,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)registerButtonPressed:(id)sender {
+
+    PFUser * user = [PFUser user];
+    user.username = self.usernameField.text;
+    user.password = self.passwordField.text;
+    user.email = self.emailField.text;
+    
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
+        if (!error) {   // Hooray! Let them use the app now.
+            
+            NSLog(@"signed up");
+            
+            UIStoryboard * mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            UINavigationController * nc = [mainStoryboard instantiateInitialViewController];
+            
+            [UIApplication sharedApplication].windows[0].rootViewController = nc;
+
+            
+        } else {
+            
+            NSString * errorString = [error userInfo][@"error"];   // Show the errorString somewhere and let the user try again.
+        }
+    }];
+    
 }
-*/
+
+
+
 
 @end

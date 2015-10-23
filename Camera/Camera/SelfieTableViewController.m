@@ -8,91 +8,99 @@
 
 #import "SelfieTableViewController.h"
 
+#import "SelfieTableViewCell.h"
+
 @interface SelfieTableViewController ()
 
 @end
 
 @implementation SelfieTableViewController
 
+{
+
+    NSMutableArray * selfies;
+    
+    
+}
+
+-(void)logout {
+    
+    [PFUser logOut];
+    
+    UIStoryboard * userStoryboard = [UIStoryboard storyboardWithName:@"User" bundle:nil];
+    UINavigationController * nc = [userStoryboard instantiateInitialViewController];
+    
+    [UIApplication sharedApplication].windows[0].rootViewController = nc;
+    
+    
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ///// LogOut Button
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
+    UIBarButtonItem * logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"GoAway" style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
+    
+//    self.navigationController.navigationItem.leftBarButtonItem = logoutButton; <--- DO NOT USE THIS TYPE OF CODE
+    
+    self.navigationItem.leftBarButtonItem = logoutButton;
+    
+    NSLog(@"%@", self.navigationController.navigationItem);
+    NSLog(@"%@", self.navigationItem);
+    
+    ///////
+    
+    selfies = [@[] mutableCopy];
+    
+    NSLog(@"viewDidLoad");
+    
+    PFQuery * selfieQuery = [PFQuery queryWithClassName:@"Selfie"];
+    
+    [selfieQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        
+        for (PFObject * selfie in objects) {
+            
+            NSLog(@"%@", selfie);
+            [selfies addObject:selfie];
+        }
+        
+        
+        
+        NSLog(@"query did finish");
+        
+        [self.tableView reloadData];
+        
+    }];
+    
+  }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+
+    NSLog(@"%@", selfies);
+    
+    NSLog(@"current selfies count %d", (int)selfies.count);
+
+    return selfies.count;
+    
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    SelfieTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SelfieCell" forIndexPath:indexPath];
+    
+    
+    
+    cell.selfie = selfies[indexPath.row];
+    
     
     return cell;
+    
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

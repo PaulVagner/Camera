@@ -88,7 +88,6 @@
     
     //pass the image
     
-#warning FIX THIS - Image is reversed horizontally.
     
     
     filterVC.originalImage = flipImage(image);

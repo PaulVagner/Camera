@@ -14,22 +14,22 @@
                         <viewControllerLayoutGuide type="bottom" id="Tjq-Ti-tJ0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0i5-hb-dFr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOv-3o-bXr">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q45-wv-DrP">
-                                <rect key="frame" x="480" y="480" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q45-wv-DrP">
+                                <rect key="frame" x="255" y="547" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="UJo-QX-CZu"/>
                                     <constraint firstAttribute="height" constant="100" id="wfT-oR-Ljd"/>
                                 </constraints>
-                                <state key="normal" title="Take Picture"/>
+                                <state key="normal" image="camera"/>
                                 <connections>
                                     <action selector="takePicture:" destination="G1M-a7-szx" eventType="touchUpInside" id="czH-38-pfF"/>
                                 </connections>
@@ -64,15 +64,15 @@
                         <viewControllerLayoutGuide type="bottom" id="N7a-8l-Mpa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e3d-LA-Sj7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZFd-GS-UFy">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
                                 <animations/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1vu-es-F93">
-                                <rect key="frame" x="0.0" y="450" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="517" width="375" height="100"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.69803921568627447" green="0.62745098039215685" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -108,12 +108,13 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUz-ul-iaL">
-                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.5607843137254902" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="A0n-Me-oyi"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -137,6 +138,7 @@
                             <constraint firstItem="1vu-es-F93" firstAttribute="leading" secondItem="e3d-LA-Sj7" secondAttribute="leading" id="kCJ-Kw-vkG"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="filterCollectionView" destination="1vu-es-F93" id="JK1-so-aFn"/>
                         <outlet property="filterImageView" destination="ZFd-GS-UFy" id="ivH-ar-1ld"/>
@@ -144,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmj-jd-gQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2099" y="354"/>
+            <point key="canvasLocation" x="1874.5" y="353.5"/>
         </scene>
         <!--Submit View Controller-->
         <scene sceneID="cic-Tz-YDS">
@@ -155,30 +157,31 @@
                         <viewControllerLayoutGuide type="bottom" id="J1f-wA-Tbg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VKS-bn-mox">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fAj-Wa-I1q">
-                                <rect key="frame" x="20" y="20" width="280" height="280"/>
+                                <rect key="frame" x="20" y="20" width="335" height="335"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fAj-Wa-I1q" secondAttribute="height" multiplier="1:1" id="tsT-RK-bbI"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-oA-ptl">
-                                <rect key="frame" x="20" y="320" width="280" height="178"/>
+                                <rect key="frame" x="20" y="375" width="335" height="222"/>
                                 <animations/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZu-0F-W1w">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.69803921568627447" green="0.62745098039215685" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.5607843137254902" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Iav-1l-8yd"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -202,7 +205,7 @@
                             <constraint firstItem="OUc-oA-ptl" firstAttribute="top" secondItem="fAj-Wa-I1q" secondAttribute="bottom" constant="20" id="igk-ah-8I9"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="captionTextView" destination="OUc-oA-ptl" id="VaT-OJ-pdC"/>
                         <outlet property="filteredImageView" destination="fAj-Wa-I1q" id="ZTq-na-7oZ"/>
@@ -210,13 +213,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAd-OT-55m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2744" y="354"/>
+            <point key="canvasLocation" x="2303.5" y="353.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YgU-Hp-1Zh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dfd-ur-icB" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9bn-XY-VD3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -229,7 +233,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HwL-41-RHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="354"/>
+            <point key="canvasLocation" x="1021.5" y="353.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="150" height="150"/>
+    </resources>
 </document>

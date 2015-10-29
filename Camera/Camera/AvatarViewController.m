@@ -6,9 +6,19 @@
 //  Copyright © 2015 Paul Vagner. All rights reserved.
 //
 
+#import "UIKit/UIKit.h"
+
 #import "AvatarViewController.h"
 
+
 @interface AvatarViewController ()
+
+@end
+
+@interface AvatarImageView : UIView
+
+
+
 
 @end
 

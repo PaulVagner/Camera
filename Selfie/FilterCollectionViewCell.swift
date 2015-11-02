@@ -44,7 +44,7 @@ class FilterCollectionViewCell: UICollectionViewCell {
         //    - (void)runFilterInBackground {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
             //       dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-            let filteredImage: UIImage = filterImage(self.originalImage, self.filterName)
+            let filteredImage: UIImage = filterImage(self.originalImage!, filterName: self.filterName!)
             //      UIImage * filteredImage = filterImage(self.originalImage, self.filterName);
             dispatch_async(dispatch_get_main_queue(), {
                 //                dispatch_async(dispatch_get_main_queue(), ^{

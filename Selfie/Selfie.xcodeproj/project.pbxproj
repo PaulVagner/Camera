@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445CABE71BE3F03700B6D23C /* ImageEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CABE61BE3F03700B6D23C /* ImageEditing.swift */; };
 		44D3F7A11BDE5F3800581480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D3F7A01BDE5F3800581480 /* AppDelegate.swift */; };
 		44D3F7A81BDE5F3800581480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F7A71BDE5F3800581480 /* Assets.xcassets */; };
 		44D3F7E41BDE650D00581480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F7E11BDE650D00581480 /* Main.storyboard */; };
@@ -47,16 +48,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		445CABE61BE3F03700B6D23C /* ImageEditing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditing.swift; sourceTree = "<group>"; };
 		44D3F79D1BDE5F3800581480 /* Selfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D3F7A01BDE5F3800581480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D3F7A71BDE5F3800581480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44D3F7AC1BDE5F3800581480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44D3F7B31BDE611C00581480 /* ImageEditing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEditing.h; sourceTree = "<group>"; };
 		44D3F7B41BDE615800581480 /* Selfie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Selfie-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		44D3F7B51BDE615900581480 /* SelfieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewController.h; sourceTree = "<group>"; };
 		44D3F7B61BDE615900581480 /* SelfieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewController.m; sourceTree = "<group>"; };
-		44D3F7DD1BDE634A00581480 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
-		44D3F7DE1BDE634A00581480 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
 		44D3F7E11BDE650D00581480 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		44D3F7E21BDE650D00581480 /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
 		44D3F7E31BDE650D00581480 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
@@ -150,7 +149,7 @@
 		44D3F7B21BDE5FB500581480 /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				44D3F7B31BDE611C00581480 /* ImageEditing.h */,
+				445CABE61BE3F03700B6D23C /* ImageEditing.swift */,
 				44D3F7BE1BDE622E00581480 /* Main Flow */,
 				44D3F7C51BDE629E00581480 /* Create Flow */,
 				44D3F7D51BDE62B700581480 /* User Flow */,
@@ -176,8 +175,6 @@
 				44D3F83C1BDEA2BF00581480 /* CaptureViewController.swift */,
 				44D3F83E1BDEA2D100581480 /* FilterViewController.swift */,
 				44D3F7DC1BDE631B00581480 /* Filter View */,
-				44D3F7DD1BDE634A00581480 /* SubmitViewController.h */,
-				44D3F7DE1BDE634A00581480 /* SubmitViewController.m */,
 				44D3F8421BDEA36600581480 /* SubmitViewController.swift */,
 			);
 			name = "Create Flow";
@@ -325,6 +322,7 @@
 				44D3F8431BDEA36600581480 /* SubmitViewController.swift in Sources */,
 				44D3F7A11BDE5F3800581480 /* AppDelegate.swift in Sources */,
 				44D3F80F1BDE70C800581480 /* SettingsViewController.swift in Sources */,
+				445CABE71BE3F03700B6D23C /* ImageEditing.swift in Sources */,
 				44D3F8371BDEA25800581480 /* SelfieTableViewController.swift in Sources */,
 				44D3F8491BDEA3C000581480 /* LoginViewController.swift in Sources */,
 				44D3F8411BDEA34D00581480 /* FilterCollectionViewCell.swift in Sources */,

@@ -50,7 +50,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         cell.filterName = filterNames[indexPath.item]
         
-        let resizedImage: UIImage = resizeImage(self.originalImage, CGSizeMake(80, 80))
+        let resizedImage: UIImage = resizeImage(self.originalImage!, newSize: CGSizeMake(80, 80))
         
         cell.originalImage = resizedImage
         
@@ -64,7 +64,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
             
-            let filteredImage: UIImage = filterImage(self.originalImage, cell.filterName)
+            let filteredImage: UIImage = filterImage(self.originalImage!, filterName: cell.filterName!)
             
             dispatch_async(dispatch_get_main_queue(), {
                 

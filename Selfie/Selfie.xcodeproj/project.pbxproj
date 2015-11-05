@@ -54,8 +54,6 @@
 		44D3F7A71BDE5F3800581480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44D3F7AC1BDE5F3800581480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D3F7B41BDE615800581480 /* Selfie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Selfie-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		44D3F7B51BDE615900581480 /* SelfieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewController.h; sourceTree = "<group>"; };
-		44D3F7B61BDE615900581480 /* SelfieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewController.m; sourceTree = "<group>"; };
 		44D3F7E11BDE650D00581480 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		44D3F7E21BDE650D00581480 /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
 		44D3F7E31BDE650D00581480 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
@@ -160,8 +158,6 @@
 		44D3F7BE1BDE622E00581480 /* Main Flow */ = {
 			isa = PBXGroup;
 			children = (
-				44D3F7B51BDE615900581480 /* SelfieTableViewController.h */,
-				44D3F7B61BDE615900581480 /* SelfieTableViewController.m */,
 				44D3F8361BDEA25800581480 /* SelfieTableViewController.swift */,
 				44D3F8381BDEA27D00581480 /* SelfieTableViewCell.swift */,
 				44D3F83A1BDEA2A300581480 /* SelfieDetailViewController.swift */,
